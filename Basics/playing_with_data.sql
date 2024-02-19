@@ -1,0 +1,55 @@
+-- show databases;
+-- use  lco_users;
+-- select database();
+-- show tables;
+-- select * from cannon_cameras;
+-- INSERT INTO cannon_cameras(model_name) VALUES('MSD');
+-- select * from cannon_cameras;
+-- INSERT INTO cannon_cameras(quantity) VALUES(50);
+-- CREATE TABLE customers(
+-- 	-- id INT NOT NULL auto_increment, 
+--     name VARCHAR(30) NOT NULL,
+--     email VARCHAR(40) NOT NULL DEFAULT 'No email provided',
+--     amount INT,
+--     PRIMARY KEY (id)
+-- );
+-- show tables;
+-- desc customers;
+-- INSERT INTO customers(name,email,amount)
+-- VALUES('hitesh','hitesh@lco.dev',35),
+-- 		('George','geo@loc.dev',45),
+--         ('hitesh','hitesh@gmail.com',88),
+--         ('lina','lina@gmail.com',78),
+--         ('Jimmy','jimmy@yahoo.co.in',54),
+--         ('lina','lina@yahoo.co.in',35),
+--         ('hitesh','hitesh@yahoo.co.in',56);
+-- 	
+
+-- select amount AS Purchases from customers;
+-- drop table customers;
+-- select * from customers;
+-- UPDATE customers SET email='' WHERE name='Jimmy';
+-- SET SQL_SAFE_UPDATES = 0;
+
+-- UPDATE customers
+-- SET email='jimmy@yahoo.com'
+-- WHERE name='Jimmy';
+-- SET SQL_SAFE_UPDATES = 1;
+-- select * from customers;
+-- select * from customers where id=6;
+-- update customers set amount=38 where id=6;
+-- select * from customers;
+-- SET SQL_SAFE_UPDATES = 0;
+-- update customers set email='lina@gmail.com' where name='lina';
+-- SET SQL_SAFE_UPDATES = 1;
+-- delete from customers where id=2;
+-- SET SQL_SAFE_UPDATES = 0;
+-- delete from customers where name='hitesh';
+-- SET SQL_SAFE_UPDATES = 1;
+-- select stu_fname, signup_month, count(*) from students
+-- group by signup_month;
+-- select stu_fname, min(login_count) from students;
+-- select stu_fname,course_count from students
+-- where course_count=(select min(course_count) from students);
+select stu_fname, login_count from students
+where login_count=(select min(login_count) from students where login_count=7 or 10); 

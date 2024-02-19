@@ -1,0 +1,40 @@
+-- show databases;
+-- create database new_lco;
+-- use new_lco;
+-- create table users(
+-- 	id INT auto_increment primary key,
+--     name varchar(50),
+--     email varchar(60)
+-- );
+-- create table purchases(
+-- 	id int auto_increment primary key,
+--     order_date date,
+--     amount int,
+--     user_id int,
+--     foreign key (user_id) references users(id)
+-- );
+-- show tables;
+-- INSERT INTO users(name,email)
+-- VALUES('thor','thor@gmail.com'),
+-- 		('peter','peter@gmail.com'),
+--         ('tony','tony@gmail.com'),
+--         ('kee','kee@gmail.com');
+
+-- INSERT INTO purchases(order_date,amount,user_id)
+-- VALUES('2020-01-22',299,8);
+-- SELECT * FROM purchases;
+-- create table orders(
+-- 	id int auto_increment primary key,
+--     order_item varchar(40),
+--     quantity int,
+--     user_id int,
+--     foreign key (user_id) references users(id)
+-- );
+-- show tables;
+-- INSERT INTO orders(order_item,quantity)
+-- VALUES('soap',1),
+-- 		('dates',3),
+--         ('maggi',4),
+--         ('mangoes',5);
+select * from orders;
+

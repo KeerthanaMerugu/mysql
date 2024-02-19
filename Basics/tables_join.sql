@@ -1,0 +1,25 @@
+-- show databases;
+-- use new_lco;
+-- show tables;
+-- SELECT * FROM users;
+-- SELECT * FROM purchases;
+-- SELECT users.id,users.name, purchases.user_id,purchases.order_date
+-- FROM users
+-- JOIN purchases ON users.id=purchases.user_id;
+-- desc users;
+-- desc purchases;
+-- SELECT USERS.id,USERS.email,PURCHASES.user_id,PURCHASES.order_date 
+-- FROM PURCHASES
+-- JOIN USERS ON PURCHASES.user_id=USERS.id;
+-- select * from orders;
+-- SELECT USERS.id,PURCHASES.user_id,ORDERS.order_item 
+-- FROM ((USERS
+-- INNER JOIN PURCHASES ON USERS.id=PURCHASES.user_id)
+-- INNER JOIN ORDERS ON USERS.id=ORDERS.user_id
+-- );
+-- select * from users;
+-- select * from purchases;
+-- SELECT USERS.id,PURCHASES.user_id 
+-- FROM USERS
+-- left JOIN PURCHASES ON PURCHASES.user_id=USERS.id;
+show engines;
